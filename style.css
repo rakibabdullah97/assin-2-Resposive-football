@@ -8,16 +8,16 @@ margin: 0%;
 
 /* Top- Banner  */
 .top-banner{
-    width: 1515px;
-    height: 667px;
+    width: 1440px;
+    height: 677px;
     background-color: #2d25ad;
     display: flex;
+    width: 100%;
 }
 .top-banner:hover img{
         transform: scale(1.1);
         transition: transform 2s ease-in-out;
 }
-
 .banner-text{
     color: #ffff;
     font-size: 64px;
@@ -86,30 +86,28 @@ a:hover{
 /* Foot-Section Styles */
 .foot-section{
     
-    display: flex;
-    justify-content: space-between;
-    padding-left: 182px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 155px;
     margin-top: 165px;
 }
 .section-1{
-    width: 500px;
-    height: 380px;
+    width: 470px;
+    height: 330px;
     padding-top: 20px;
     padding-left: 30px;
-    box-shadow: 5px 5px 20px 5px #6C6C6C;
-    margin-right: 69px ;
-    
+    box-shadow: 5px 5px 20px 5px #6C6C6C; 
 }
 .section-2{
-    width: 500px;
-    height: 380px;
+    width: 470px;
+    height: 330px;
     box-shadow: 5px 5px 20px 5px #6C6C6C;
     padding-top: 20px;
     padding-left: 30px;
-    margin-right: 249px;
+
 }
 /* Footer styles  */
-.footer-container{
+.foot-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,3 +117,69 @@ a:hover{
     color: grey;
     font-size: 30px;
 }
+.fab{
+   padding-right: 14px;
+}
+/* media qyaries */
+
+/* Mobile devices */
+@media only screen and (max-width:688px) {
+
+    .top-banner{
+        flex-direction: column;
+        width: 360px;
+        height: 695px;
+        width: 100%;
+    }
+    .banner-text{
+        color: #ffff;
+        font-size: 36px;
+         width: 288px;
+         height: 145px; 
+        padding-left: 18px;
+        margin-top:80px;   
+ 
+   } 
+   .banner-info a{
+    margin-left: 18px;      
+      
+  }
+   .top-image img{
+    width: 329px;
+    height: 259px;
+    padding-left: 20px;
+    margin-top: 80px;
+    
+   }
+   .albums{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-left: 45px;
+    padding-top: 47px;  
+   }
+   .foot-section{
+    
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 29px;
+    padding-left:30px;
+    margin-top: 60px;
+  }
+ .section-1{
+    width: 329px;
+    height: 299px; 
+    padding-bottom: 50px;  
+  }
+  .section-2{
+    width: 329px;
+    height: 299px;
+    padding-bottom: 50px;
+ 
+ }
+
+}
+
+
+
+
+
